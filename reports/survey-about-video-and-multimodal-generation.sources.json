@@ -1,0 +1,178 @@
+[
+  {
+    "n": 1,
+    "id": "-",
+    "url": "https://pfnet-research.github.io/tgan/",
+    "title": "Temporal Generative Adversarial Nets with Singular Value Clipping",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2104.10157",
+    "title": "VideoGPT: Video Generation using VQ-VAE and Transformers",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2204.03458",
+    "title": "Video Diffusion Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "-",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+    "title": "Video generation models as world simulators",
+    "date": "2024-02-15",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "2401.03048",
+    "url": "https://huggingface.co/papers/2401.03048",
+    "title": "Latte: Latent Diffusion Transformer for Video Generation",
+    "date": "2024-01-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2406.10981",
+    "url": "https://huggingface.co/papers/2406.10981",
+    "title": "ViD-GPT: Introducing GPT-style Autoregressive Generation in Video Diffusion Models",
+    "date": "2024-06-16",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "2412.14169",
+    "url": "https://huggingface.co/papers/2412.14169",
+    "title": "Autoregressive Video Generation without Vector Quantization",
+    "date": "2024-12-18",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "2509.24081",
+    "url": "https://huggingface.co/papers/2509.24081",
+    "title": "Autoregressive Video Generation beyond Next Frames Prediction",
+    "date": "2025-09-28",
+    "source": "hf-search"
+  },
+  {
+    "n": 9,
+    "id": "2610.12468",
+    "url": "https://huggingface.co/papers/2610.12468",
+    "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 10,
+    "id": "-",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Cheng_MMAudio_Taming_Multimodal_Joint_Training_for_High-Quality_Video-to-Audio_Synthesis_CVPR_2025_paper.html",
+    "title": "MMAudio: Taming Multimodal Joint Training for High-Quality Video-to-Audio Synthesis",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2511.21780",
+    "title": "3MDiT: Unified Tri-Modal Diffusion Transformer for Text-Driven Synchronized Audio-Video Generation",
+    "date": "2025-11-26",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "-",
+    "url": "https://github.com/Wan-Video/Wan2.1",
+    "title": "Wan-Video/Wan2.1",
+    "date": "2025-02-25",
+    "source": "web"
+  },
+  {
+    "n": 13,
+    "id": "2608.31106",
+    "url": "https://huggingface.co/papers/2608.31106",
+    "title": "DreamX-Creator: Democratizing Native Audio-Video Generation at 2K Resolution",
+    "date": "2026-08-31",
+    "source": "hf-daily"
+  },
+  {
+    "n": 14,
+    "id": "2506.05284",
+    "url": "https://huggingface.co/papers/2506.05284",
+    "title": "Video World Models with Long-term Spatial Memory",
+    "date": "2025-06-05",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "2610.12458",
+    "url": "https://huggingface.co/papers/2610.12458",
+    "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 16,
+    "id": "2610.06801",
+    "url": "https://huggingface.co/papers/2610.06801",
+    "title": "MC-Sparse: Deconstructing and Closing the Dense-Sparse Attention Gap in Diffusion Transformers",
+    "date": "2026-10-05",
+    "source": "hf-daily"
+  },
+  {
+    "n": 17,
+    "id": "2608.29910",
+    "url": "https://huggingface.co/papers/2608.29910",
+    "title": "Matrix-Game 3.5: Enhancing Real-Time Streaming Interactive World Models with Patch Memory",
+    "date": "2026-08-30",
+    "source": "hf-daily"
+  },
+  {
+    "n": 18,
+    "id": "-",
+    "url": "https://arxiv.org/html/2604.06339v1",
+    "title": "Evolution of Video Generative Foundations",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 19,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2209.14792",
+    "title": "Make-A-Video: Text-to-Video Generation without Text-Video Data",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 20,
+    "id": "2305.13311",
+    "url": "https://huggingface.co/papers/2305.13311",
+    "title": "VDT: General-purpose Video Diffusion Transformers via Mask Modeling",
+    "date": "2023-05-22",
+    "source": "hf-search"
+  },
+  {
+    "n": 21,
+    "id": "2407.12781",
+    "url": "https://huggingface.co/papers/2407.12781",
+    "title": "VD3D: Taming Large Video Diffusion Transformers for 3D Camera Control",
+    "date": "2024-07-17",
+    "source": "hf-search"
+  },
+  {
+    "n": 22,
+    "id": "2610.12343",
+    "url": "https://huggingface.co/papers/2610.12343",
+    "title": "Reasoning-Informed Visual Editing",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  }
+]

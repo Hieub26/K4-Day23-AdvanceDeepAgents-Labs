@@ -1,0 +1,186 @@
+[
+  {
+    "n": 1,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2308.11432",
+    "title": "A Survey on Large Language Model based Autonomous Agents",
+    "date": "2025-03-02",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "-",
+    "url": "https://aclanthology.org/2025.coling-main.652.pdf",
+    "title": "A Review of Prominent Paradigms for LLM-Based Agents: Tool Use, Planning (Including RAG), and Feedback Learning",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2205.00445",
+    "title": "MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "date": "2023-02-09",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "date": "2023-03-10",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "2307.16789",
+    "url": "https://huggingface.co/papers/2307.16789",
+    "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "date": "2023-07-31",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "2401.07324",
+    "url": "https://huggingface.co/papers/2401.07324",
+    "title": "Small LLMs Are Weak Tool Learners: A Multi-LLM Agent",
+    "date": "2024-01-14",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "-",
+    "url": "https://arxiv.org/html/2507.21504v1",
+    "title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "-",
+    "url": "https://arxiv.org/html/2606.04874v2",
+    "title": "Agent Planning Benchmark: A Diagnostic Framework for Planning Capabilities in LLM Agents",
+    "date": "2026-06-05",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "-",
+    "url": "https://arxiv.org/html/2604.24964v1",
+    "title": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "2610.06406",
+    "url": "https://huggingface.co/papers/2610.06406",
+    "title": "What Did the Agent Actually Do? Evidence-Grounded Oversight for Long-Horizon Agents",
+    "date": "2026-10-05",
+    "source": "hf-daily"
+  },
+  {
+    "n": 12,
+    "id": "2610.08215",
+    "url": "https://huggingface.co/papers/2610.08215",
+    "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 13,
+    "id": "2610.11366",
+    "url": "https://huggingface.co/papers/2610.11366",
+    "title": "SpatialOPSD: Self-Distilling Spatial Intelligence from Verified Coding Agent Traces",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 14,
+    "id": "-",
+    "url": "https://aclanthology.org/2025.emnlp-main.714.pdf",
+    "title": "ToolSafety: A Comprehensive Dataset for Enhancing Safety in LLM-Based Agent Tool Invocations",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 15,
+    "id": "2302.04761",
+    "url": "https://huggingface.co/papers/2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "date": "2023-02-09",
+    "source": "hf-search"
+  },
+  {
+    "n": 16,
+    "id": "2310.04474",
+    "url": "https://huggingface.co/papers/2310.04474",
+    "title": "Reverse Chain: A Generic-Rule for LLMs to Master Multi-API Planning",
+    "date": "2023-10-06",
+    "source": "hf-search"
+  },
+  {
+    "n": 17,
+    "id": "2510.00229",
+    "url": "https://huggingface.co/papers/2510.00229",
+    "title": "DualTune: Decoupled Fine-Tuning for On-Device Agentic Systems",
+    "date": "2025-09-30",
+    "source": "hf-search"
+  },
+  {
+    "n": 18,
+    "id": "2508.15214",
+    "url": "https://huggingface.co/papers/2508.15214",
+    "title": "Self-Guided Function Calling in Large Language Models via Stepwise Experience Recall",
+    "date": "2025-08-21",
+    "source": "hf-search"
+  },
+  {
+    "n": 19,
+    "id": "-",
+    "url": "https://aclanthology.org/2023.emnlp-main.187/",
+    "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 20,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2506.07982",
+    "title": "Evaluating Conversational Agents in a Dual-Control Environment",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 21,
+    "id": "-",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/3dc85735f6e2fcf093e67b134fa00d21-Paper-Conference.pdf",
+    "title": "AgentAuditor: Human-Level Safety and Security Evaluation for LLM Agents",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 22,
+    "id": "2610.06100",
+    "url": "https://huggingface.co/papers/2610.06100",
+    "title": "From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation",
+    "date": "2026-10-05",
+    "source": "hf-daily"
+  },
+  {
+    "n": 23,
+    "id": "2610.12360",
+    "url": "https://huggingface.co/papers/2610.12360",
+    "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  }
+]

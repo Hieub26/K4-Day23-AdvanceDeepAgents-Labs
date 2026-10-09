@@ -1,0 +1,170 @@
+[
+  {
+    "n": 1,
+    "id": "-",
+    "url": "https://aclanthology.org/2025.ranlp-1.93/",
+    "title": "A Survey on Small Language Models",
+    "date": "2025-09",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "-",
+    "url": "https://www.mdpi.com/2073-431X/12/3/60",
+    "title": "Model Compression for Deep Neural Networks: A Survey",
+    "date": "2023-03-12",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "2309.06180",
+    "url": "https://arxiv.org/abs/2309.06180",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "date": "2023-09-12",
+    "source": "web"
+  },
+  {
+    "n": 4,
+    "id": "-",
+    "url": "https://arxiv.org/abs/1910.01108",
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "date": "2019-10-02",
+    "source": "web"
+  },
+  {
+    "n": 5,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2306.11695",
+    "title": "A Simple and Effective Pruning Approach for Large Language Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 6,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2210.17323",
+    "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 7,
+    "id": "2504.06419",
+    "url": "https://arxiv.org/abs/2504.06419",
+    "title": "SPIRe: Boosting LLM Inference Throughput with Speculative Decoding",
+    "date": "2025-04-08",
+    "source": "web"
+  },
+  {
+    "n": 8,
+    "id": "2403.02310",
+    "url": "https://arxiv.org/html/2403.02310v2",
+    "title": "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve",
+    "date": "2024-06-12",
+    "source": "web"
+  },
+  {
+    "n": 9,
+    "id": "2610.12242",
+    "url": "https://huggingface.co/papers/2610.12242",
+    "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 10,
+    "id": "2609.39068",
+    "url": "https://huggingface.co/papers/2609.39068",
+    "title": "SparseEngine: Sparse-First Inference Engine",
+    "date": "2026-09-30",
+    "source": "hf-daily"
+  },
+  {
+    "n": 11,
+    "id": "2606.14711",
+    "url": "https://huggingface.co/papers/2606.14711",
+    "title": "SWARM-LLM: Collaborative Inference for Edge-based Small Language Models",
+    "date": "2026-04-22",
+    "source": "hf-search"
+  },
+  {
+    "n": 12,
+    "id": "2608.17183",
+    "url": "https://huggingface.co/papers/2608.17183",
+    "title": "Benchmarking the Benchmarks: Evaluating Automated Safety Benchmarks for Small Language Models",
+    "date": "2026-08-17",
+    "source": "hf-search"
+  },
+  {
+    "n": 13,
+    "id": "2607.16243",
+    "url": "https://huggingface.co/papers/2607.16243",
+    "title": "RobustMAD: Evaluating Real-World Robustness of Multimodal Small Language Models for Deployable Anomaly Detection Assistants",
+    "date": "2026-06-26",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "-",
+    "url": "https://aclanthology.org/2020.acl-main.195/",
+    "title": "MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 15,
+    "id": "2405.04437",
+    "url": "https://huggingface.co/papers/2405.04437",
+    "title": "vAttention: Dynamic Memory Management for Serving LLMs without PagedAttention",
+    "date": "2024-05-07",
+    "source": "hf-search"
+  },
+  {
+    "n": 16,
+    "id": "2307.08691",
+    "url": "https://arxiv.org/abs/2307.08691",
+    "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+    "date": "2023-07-17",
+    "source": "web"
+  },
+  {
+    "n": 17,
+    "id": "2502.10424",
+    "url": "https://proceedings.mlr.press/v267/tiwari25b.html",
+    "title": "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+    "date": "2025-10-06",
+    "source": "web"
+  },
+  {
+    "n": 18,
+    "id": "2505.22179",
+    "url": "https://huggingface.co/papers/2505.22179",
+    "title": "Speculative Decoding Meets Quantization: Compatibility Evaluation and Hierarchical Framework Design",
+    "date": "2025-05-28",
+    "source": "hf-search"
+  },
+  {
+    "n": 19,
+    "id": "2610.09639",
+    "url": "https://huggingface.co/papers/2610.09639",
+    "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+    "date": "2026-10-07",
+    "source": "hf-daily"
+  },
+  {
+    "n": 20,
+    "id": "2610.11366",
+    "url": "https://huggingface.co/papers/2610.11366",
+    "title": "SpatialOPSD: Self-Distilling Spatial Intelligence from Verified Coding Agent Traces",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 21,
+    "id": "2610.12402",
+    "url": "https://huggingface.co/papers/2610.12402",
+    "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  }
+]

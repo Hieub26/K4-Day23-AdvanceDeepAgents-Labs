@@ -1,0 +1,66 @@
+# World Models: From Latent Dynamics to Interactive Generative Simulators
+
+## TL;DR
+- “World model” is an umbrella term: it can mean a shared representation of world state, a learned predictor of how the world evolves, or a task-relevant simulator used for planning; definitions vary across robotics and machine learning. [1][2]
+- Model-based reinforcement learning spans latent-space planning (PlaNet), optimization through imagined trajectories (Dreamer), and approaches emphasizing scalable control across tasks (TD-MPC2 and DreamerV3). [3][4][5][6]
+- Recent work increasingly treats video models as interactive, action-conditioned simulators, while robotics systems bring policy learning, video prediction, and action evaluation closer together. [7][8]
+- Evaluation is multidimensional: video quality or perceptual scores do not reliably establish action controllability, physical fidelity, or downstream utility. [9][10]
+- Current benchmarks still expose substantial gaps in physical commonsense, long-horizon planning, generalization across interaction regimes, and coverage of failures. [11][12][13][14]
+
+## Background
+A useful working definition is a learned or maintained representation of the environment that supports prediction of relevant future states under possible actions. This captures both the robotics idea of a shared internal world state and the deep-learning idea of a compact simulator; the two traditions use the same phrase for related but non-identical objects. [1][15] The robotics review proposes thinking structurally about a model's boundary, internal state, and operations for adding, modifying, or querying information. [1]
+
+The key motivation is to move beyond reacting only to the current observation: an agent can use an internal model to anticipate consequences, compare actions, and plan. This idea predates current neural systems: Dyna integrates learning a model of action effects, planning with that model, and reactive execution. [16] A later deep-learning formulation learned a compressed spatial-temporal representation and recurrently predicted future latent states; its controller was trained in generated “dreams” and then transferred to the environment. [15] Thus, “world model” is best treated as a functional description, not one fixed architecture: the model may be explicit or latent, predictive or generative, and useful for either planning or control. [1][15]
+
+## Latent dynamics, imagination, and control
+One influential family learns compact state dynamics from high-dimensional observations and uses them to select actions. PlaNet plans in latent space from pixels, while Dreamer learns behavior by optimizing imagined trajectories through learned latent dynamics and value estimates. [3][4] Their common bet is that a useful predictive state need not reproduce every observation detail: it must preserve information relevant to forecasting rewards and action consequences. Dreamer's reported approach combines image encoding, a latent transition model, and a reward model; the policy/value learner then exploits those dynamics. [17]
+
+Later systems extend this pattern in different directions. TD-MPC2 is presented as a continuous-control method with consistent performance across tasks using one set of hyperparameters, and its summary reports benefits from larger models and datasets. [5] DreamerV3 emphasizes one algorithm and fixed hyperparameters across diverse domains, with Minecraft diamond collection without human data or curricula as a reported milestone. [6] These summaries suggest a shift from demonstrating that latent imagination can work toward robustness and breadth, but they do not make results directly comparable: task suites, training data, metrics, and evaluation protocols differ. [4][5][6]
+
+A separate design question is whether the model should reconstruct observations. MuDreamer reports learning predictive world models without pixel reconstruction and claims improved robustness to visual distractions and faster training than DreamerV3. [18] Robotics-oriented work describes a neural simulator trained with a dual-autoregressive mechanism for robust policy optimization, although the retrieved summary provides no quantitative evidence. [19] These examples illustrate an important distinction: visual reconstruction is one possible objective, whereas the practical criterion is whether model predictions improve decisions or policy learning. [19][18]
+
+## Generative video and interactive world models
+Since 2024, a visible strand has framed world modeling as action-conditioned video generation. iVideoGPT combines visual observations, actions, and rewards in a multimodal autoregressive transformer and reports capabilities in video prediction, planning, and reinforcement learning. [7] Interactive systems expand this goal from generating a plausible next clip to maintaining coherent responses as a user or agent acts: Matrix-Game 3.0, for example, describes a memory-augmented diffusion model for real-time streaming video with long-term temporal consistency. [20]
+
+Embodied work is also converging video generation with control. τ_0-WM integrates policy learning, video prediction, and action evaluation in a shared video-diffusion backbone for robotic manipulation. [8] New data efforts target the gap between passive internet video and embodied trajectories: EgoCS-400K supplies egocentric gameplay video-action-language sequences with player states and events. [21] A complementary 2026 robot model explicitly identifies calibration and insufficient unsuccessful-interaction examples as obstacles, and proposes image-space action conditioning, offline geometric calibration, and counterfactual post-training. [22] Failure-aware training similarly uses failure rollouts to supervise predicted consequences, motivated by success-biased hallucinations. [14]
+
+These systems embody different meanings of “interactive.” Some condition generated futures on actions; others also maintain state or memory across turns, evaluate candidate actions, or use the model as a simulator for policy improvement. The distinction matters: a visually plausible response to an action is not necessarily a faithful causal prediction of what that action would do. Benchmarks that vary interaction type and physical regime are beginning to test this more directly. [9][13]
+
+## Evaluation: fidelity is not utility
+No single score captures a world model's quality. Evaluation can ask whether it predicts future observations, respects physical constraints, follows actions, maintains consistency over time, or supports successful downstream planning and control. Benchmark design is consequently part of the field's central question: what evidence demonstrates that a generated world is useful as a model rather than merely convincing as video? [23][9][10]
+
+The available benchmark results warn against equating perceptual quality with function. WBench evaluates interactive video across quality, instruction adherence, consistency, and physics compliance, and reports near-zero correlations between navigation and video quality, consistency, or physical compliance; no evaluated model performed strongly across all dimensions. Its reported automatic-to-human ranking alignment is based on comparisons among a limited set of models per aspect, so it supports the metric in that setup rather than a universal evaluator. [9] WorldArena combines video-quality metrics with embodied functions and reports that policies trained on synthetic trajectories from most tested models lag real-data training; its perceptual score correlates less with action-planning performance than with human judgments. [10]
+
+Physical and procedural reasoning remain difficult in the reported tests. VideoPhy-2 reports only 22% joint high semantic and physical adherence for the best model on its hard subset, with particular difficulty in conservation of mass and momentum. [12] WorldPrediction reports top performance of 57.0% on its world-modeling task and 38.1% on procedural planning, compared with perfect human performance on both tasks. [11] Its action-equivalent candidates are designed to reduce reliance on low-level scene-continuity cues, an important control against superficial success. [11] These are benchmark-specific results, not a universal ranking of all models, but they expose the gap between plausible generation and robust causal or long-horizon competence.
+
+## Trends and open problems
+Recent work expands along three connected axes: scale and temporal continuity in interactive video, tighter integration between video and embodied action, and more targeted evaluation of causal prediction and physical interaction. [7][20][8][13] New benchmark suites probe intervention outcomes and multi-turn control, while datasets and training methods explicitly target physical-regime diversity, calibration, and failure cases. [24][21][13][14][22][25]
+
+The central open issue is action faithfulness: a model must represent how different interventions change future states, not merely extend familiar visual patterns. Evidence of weaknesses includes benchmark gaps in physical adherence, weak planning performance, and worse generalization for complex deformable contacts than for simple geometric interactions. [11][12][13] Another unresolved issue is alignment between proxy metrics and deployment value: perceptual ratings and human agreement can be useful, but reported correlations with action-planning and synthetic-data utility are lower. [9][10] Robust progress therefore requires evaluations that jointly test controlled interventions, long horizons, failure prediction, physical consistency, and downstream utility, while being explicit about the environments and tasks on which claims hold. [11][9][10][14]
+
+## References
+[1] Robotic world models—conceptualization, review, and engineering best practices. web. https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1253049/full (2023-11-02)
+[2] Yann LeCun on a vision to make AI systems learn and reason like animals and humans. web. https://ai.meta.com/blog/yann-lecun-advances-in-ai-research/ (2022-02-23)
+[3] Learning Latent Dynamics for Planning from Pixels. hf-search. https://huggingface.co/papers/1811.04551 (2019-06-04)
+[4] Dream to Control: Learning Behaviors by Latent Imagination. hf-search. https://huggingface.co/papers/1912.01603 (2019-12-03)
+[5] TD-MPC2: Scalable, Robust World Models for Continuous Control. hf-search. https://huggingface.co/papers/2310.16828 (2023-10-25)
+[6] Mastering Diverse Domains through World Models. hf-search. https://huggingface.co/papers/2301.04104 (2023-01-10)
+[7] iVideoGPT: Interactive VideoGPTs are Scalable World Models. hf-search. https://huggingface.co/papers/2405.15223 (2024-05-24)
+[8] τ_0-WM: A Unified Video-Action World Model for Robotic Manipulation. hf-search. https://huggingface.co/papers/2606.01027 (2026-05-31)
+[9] WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation. web. https://arxiv.org/html/2605.25874 (n.d.)
+[10] WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models. web. https://arxiv.org/html/2602.08971 (n.d.)
+[11] WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning. web. https://arxiv.org/html/2506.04363v1 (n.d.)
+[12] VideoPhy-2: A Challenging Action-Centric Physical Commonsense Evaluation in Video Generation. web. https://arxiv.org/abs/2503.06800 (2025-03-09)
+[13] ACWM-Phys: Investigating Generalized Physical Interaction in Action-Conditioned Video World Models. hf-search. https://huggingface.co/papers/2605.08567 (2026-05-09)
+[14] FACT: Failure-Aware Causal Training for World-Action Models. hf-search. https://huggingface.co/papers/2608.10232 (2026-08-10)
+[15] World Models. web. https://arxiv.org/abs/1803.10122 (2018-03-27)
+[16] Dyna, an integrated architecture for learning, planning, and reacting. web. https://dl.acm.org/doi/10.1145/122344.122377 (1991-07-01)
+[17] Dream to Control: Learning Behaviors by Latent Imagination. web. https://arxiv.org/abs/1912.01603 (n.d.)
+[18] MuDreamer: Learning Predictive World Models without Reconstruction. hf-search. https://huggingface.co/papers/2405.15083 (2024-05-23)
+[19] Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics. hf-search. https://huggingface.co/papers/2501.10100 (2025-01-17)
+[20] Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory. hf-search. https://huggingface.co/papers/2604.08995 (2026-04-10)
+[21] EgoCS-400K: An Egocentric Gameplay Dataset for World Models. hf-search. https://huggingface.co/papers/2606.18180 (2026-06-16)
+[22] DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training. hf-daily. https://huggingface.co/papers/2610.12468 (2026-10-08)
+[23] WorldModelBench: Judging Video Generation Models As World Models. web. https://arxiv.org/html/2502.20694v1 (n.d.)
+[24] SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models. hf-daily. https://huggingface.co/papers/2610.12402 (2026-10-08)
+[25] WorldMark: A Unified Benchmark Suite for Interactive Video World Models. hf-search. https://huggingface.co/papers/2604.21686 (2026-04-23)

@@ -1,0 +1,202 @@
+[
+  {
+    "n": 1,
+    "id": "-",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1253049/full",
+    "title": "Robotic world models—conceptualization, review, and engineering best practices",
+    "date": "2023-11-02",
+    "source": "web"
+  },
+  {
+    "n": 2,
+    "id": "-",
+    "url": "https://ai.meta.com/blog/yann-lecun-advances-in-ai-research/",
+    "title": "Yann LeCun on a vision to make AI systems learn and reason like animals and humans",
+    "date": "2022-02-23",
+    "source": "web"
+  },
+  {
+    "n": 3,
+    "id": "1811.04551",
+    "url": "https://huggingface.co/papers/1811.04551",
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "date": "2019-06-04",
+    "source": "hf-search"
+  },
+  {
+    "n": 4,
+    "id": "1912.01603",
+    "url": "https://huggingface.co/papers/1912.01603",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "date": "2019-12-03",
+    "source": "hf-search"
+  },
+  {
+    "n": 5,
+    "id": "2310.16828",
+    "url": "https://huggingface.co/papers/2310.16828",
+    "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
+    "date": "2023-10-25",
+    "source": "hf-search"
+  },
+  {
+    "n": 6,
+    "id": "2301.04104",
+    "url": "https://huggingface.co/papers/2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "date": "2023-01-10",
+    "source": "hf-search"
+  },
+  {
+    "n": 7,
+    "id": "2405.15223",
+    "url": "https://huggingface.co/papers/2405.15223",
+    "title": "iVideoGPT: Interactive VideoGPTs are Scalable World Models",
+    "date": "2024-05-24",
+    "source": "hf-search"
+  },
+  {
+    "n": 8,
+    "id": "2606.01027",
+    "url": "https://huggingface.co/papers/2606.01027",
+    "title": "τ_0-WM: A Unified Video-Action World Model for Robotic Manipulation",
+    "date": "2026-05-31",
+    "source": "hf-search"
+  },
+  {
+    "n": 9,
+    "id": "-",
+    "url": "https://arxiv.org/html/2605.25874",
+    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 10,
+    "id": "-",
+    "url": "https://arxiv.org/html/2602.08971",
+    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 11,
+    "id": "-",
+    "url": "https://arxiv.org/html/2506.04363v1",
+    "title": "WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 12,
+    "id": "-",
+    "url": "https://arxiv.org/abs/2503.06800",
+    "title": "VideoPhy-2: A Challenging Action-Centric Physical Commonsense Evaluation in Video Generation",
+    "date": "2025-03-09",
+    "source": "web"
+  },
+  {
+    "n": 13,
+    "id": "2605.08567",
+    "url": "https://huggingface.co/papers/2605.08567",
+    "title": "ACWM-Phys: Investigating Generalized Physical Interaction in Action-Conditioned Video World Models",
+    "date": "2026-05-09",
+    "source": "hf-search"
+  },
+  {
+    "n": 14,
+    "id": "2608.10232",
+    "url": "https://huggingface.co/papers/2608.10232",
+    "title": "FACT: Failure-Aware Causal Training for World-Action Models",
+    "date": "2026-08-10",
+    "source": "hf-search"
+  },
+  {
+    "n": 15,
+    "id": "1803.10122",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "title": "World Models",
+    "date": "2018-03-27",
+    "source": "web"
+  },
+  {
+    "n": 16,
+    "id": "-",
+    "url": "https://dl.acm.org/doi/10.1145/122344.122377",
+    "title": "Dyna, an integrated architecture for learning, planning, and reacting",
+    "date": "1991-07-01",
+    "source": "web"
+  },
+  {
+    "n": 17,
+    "id": "1912.01603",
+    "url": "https://arxiv.org/abs/1912.01603",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 18,
+    "id": "2405.15083",
+    "url": "https://huggingface.co/papers/2405.15083",
+    "title": "MuDreamer: Learning Predictive World Models without Reconstruction",
+    "date": "2024-05-23",
+    "source": "hf-search"
+  },
+  {
+    "n": 19,
+    "id": "2501.10100",
+    "url": "https://huggingface.co/papers/2501.10100",
+    "title": "Robotic World Model: A Neural Network Simulator for Robust Policy Optimization in Robotics",
+    "date": "2025-01-17",
+    "source": "hf-search"
+  },
+  {
+    "n": 20,
+    "id": "2604.08995",
+    "url": "https://huggingface.co/papers/2604.08995",
+    "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+    "date": "2026-04-10",
+    "source": "hf-search"
+  },
+  {
+    "n": 21,
+    "id": "2606.18180",
+    "url": "https://huggingface.co/papers/2606.18180",
+    "title": "EgoCS-400K: An Egocentric Gameplay Dataset for World Models",
+    "date": "2026-06-16",
+    "source": "hf-search"
+  },
+  {
+    "n": 22,
+    "id": "2610.12468",
+    "url": "https://huggingface.co/papers/2610.12468",
+    "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 23,
+    "id": "-",
+    "url": "https://arxiv.org/html/2502.20694v1",
+    "title": "WorldModelBench: Judging Video Generation Models As World Models",
+    "date": "n.d.",
+    "source": "web"
+  },
+  {
+    "n": 24,
+    "id": "2610.12402",
+    "url": "https://huggingface.co/papers/2610.12402",
+    "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+    "date": "2026-10-08",
+    "source": "hf-daily"
+  },
+  {
+    "n": 25,
+    "id": "2604.21686",
+    "url": "https://huggingface.co/papers/2604.21686",
+    "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+    "date": "2026-04-23",
+    "source": "hf-search"
+  }
+]
